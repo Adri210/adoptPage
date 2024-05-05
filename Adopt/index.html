@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <header>
+        
+        <nav id="navbar">
+             <div> 
+                Aa
+                 <button class="btn-acessibilidade" onClick="fonte('a');">+</button>
+                 <button class="btn-acessibilidade" onClick="fonte('d');">-</button>
+             </div>
+
+            <i class="fa-solid fa-shield-cat" id="nav_logo">ADOTE</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home" >Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Adote
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title acessibilidade">
+                    Aqui você encontra seu
+                    <span>melhor amigo</span>
+                </h1>
+
+                <p class="description acessibilidade ">
+                    Dê uma segunda chance a um amigo peludo - adote um pet hoje!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Adotar já
+                    </a>
+
+                    <a href="tel:+55555555555" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (51) 92342-3243
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/pet.png" alt="" class="imagem_banner">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title acessibilidade">Adotar</h2>
+            <h3 class="section-subtitle acessibilidade">Pets disponiveis</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/cat1.jpg" class="pet-image" alt="">
+
+                    <h3 class="dish-title acessibilidade">
+                        Gato Macho
+                    </h3>
+
+                    <span class="dish-description acessibilidade">
+                        Este é Mio, um gatinho encantador cheio de personalidade! Ele é curioso, brincalhão e adora se enroscar no colo para receber carinho
+                    </span>
+
+                    
+
+                    <div class="dish-price">
+
+                        <button class="btn-default">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dog1.jpg" class="pet-image" alt="">
+
+                    <h3 class="dish-title acessibilidade">
+                        Cachorro Fêmea
+                    </h3>
+
+                    <span class="dish-description acessibilidade">
+                        Layla foi resgatada e desde então tem sido cuidada com muito amor e dedicação. Ela está em busca de um lar amoroso onde possa receber toda a atenção e carinho que merece.
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/cat2.jpg" class="pet-image" alt="">
+
+                    <h3 class="dish-title acessibilidade">
+                        Gato Fêmea
+                    </h3>
+
+                    <span class="dish-description acessibilidade">
+                        Nina é saudável, vacinada e castrada. Ela está acostumado a viver dentro de casa e é bastante limpo com sua bandeja de areia. Ela adora brinquedos interativos e arranhadores.
+                    </span>
+
+                    <div class="dish-price">
+
+                        <button class="btn-default">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/images/dog2.jpg" class="pet-image" alt="">
+
+                    <h3 class="dish-title acessibilidade">
+                        Chachorro Macho
+                    </h3>
+
+                    <span class="dish-description acessibilidade">
+                        Theo está em busca de um lar amoroso onde ele possa ser parte da família. Ele adora brincar e receber carinho, então um ambiente onde ele possa desfrutar de ambos seria perfeito para ele. Se você está procurando um companheiro felino leal e amoroso, Theo pode ser o cachorrinho perfeito para você!
+                    </span>
+
+                    <div class="dish-price">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/images/adopt.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title acessibilidade">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle acessibilidade">
+                    O que as pessoas que adotaram conosco falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p class="acessibilidade">
+                                ANA
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p class="acessibilidade">
+                                "Encontrei meu melhor amigo peludo neste site! Processo de adoção fácil e equipe muito prestativa."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p class="acessibilidade">
+                                Maria
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p class="acessibilidade">
+                                "Amo este site de adoção! Encontrei o cachorrinho dos meus sonhos e agora ele é parte da família."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
