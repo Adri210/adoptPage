@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-#dishes {
+#pets {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
     margin-top: 32px;
 }
 
-.dish {
+.pet{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
     overflow: hidden;
 }
 
-.dish-heart {
+.pet-heart {
     position: absolute;
     background-color: var(--color-primary-6);
     display: flex;
@@ -43,16 +43,14 @@
     border-radius: 0px 37.5px 0px 42.5px;
 }
 
-.dish-description {
+.pet-description {
     color: #434343;
     text-align: center;
 }
 
-.dish-rate i {
-    color: var(--color-primary-6);
-}
 
-.dish-price {
+
+.pet-adopt {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -67,18 +65,18 @@
 }
 
 @media screen and (max-width: 1170px) {
-    #dishes {
+    #pets {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .dish {
+    .pet {
         width: calc(50% - 12px);
     }
 }
 
 @media screen and (max-width: 600px) {
-    .dish {
+    .pet {
         width: 100%;
     }
 
